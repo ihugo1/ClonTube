@@ -15,7 +15,7 @@
     margin: 0 5px;
     color: red;
 }
-.side-menu-btn{
+.side-menu-btn-open{
     width: 40px;
     height: 40px;
     margin: 0 5px;
@@ -101,7 +101,7 @@
     .nav-right{
         width: 20vw;
     }
-    .side-menu-btn{
+    .side-menu-btn-open{
         display: none;
     }
     .search-bar-btn{

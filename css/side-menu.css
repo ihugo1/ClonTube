@@ -1,0 +1,24 @@
+.side-menu{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 20vw;
+    padding: 2% 2%;
+    background-color: white;
+    border-right: 1px solid #ccc;
+    left: -20vw;
+    transition: left 0.3s ease;
+    z-index: 2;
+}
+.side-menu-header{
+    justify-content: flex-start;
+}
+.side-menu.side-menu-ACTIVE{
+    left: 0;
+}
+/*************************Responsive*************************/
+@media (max-width: 768px) {
+    .side-menu{
+        display: none;
+    }
+}

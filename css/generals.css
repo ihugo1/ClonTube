@@ -8,9 +8,29 @@
 button {
     all: unset;
 }
-/*Flex DIV*/
+/*******************Flex DIV*********************/
 .flex-div{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+/**********overlay****************/
+.overlay::after {
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    visibility: hidden;   
+    opacity: 0;           
+    transition: opacity 0.5s, visibility 0s 0.5s; 
+}
+.overlay.activeOverlay::after {
+    visibility: visible; 
+    opacity: 1;           
+    transition: opacity 0.5s; 
 }
