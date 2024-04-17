@@ -1,0 +1,16 @@
+*, a{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+button {
+    all: unset;
+}
+/*Flex DIV*/
+.flex-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

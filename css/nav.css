@@ -1,0 +1,116 @@
+/*************************NavBar*************************/
+.nav{
+    height: 10vh;
+    border-bottom: 1px solid #ccc;
+    padding: 0 1%;
+}
+/*************************NavBarLeft*************************/
+.nav-left{
+    width: 30vw;
+    justify-content: flex-start;
+    height: 100%;
+}
+.icon-youtube{
+    font-size: 40px;
+    margin: 0 5px;
+    color: red;
+}
+.side-menu-btn{
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+.icon-menu{
+    font-size: 30px;
+}
+/*************************NavBarMiddle*************************/
+.nav-middle{
+    width: 40vw;
+    justify-content: center;
+    height: 100%;
+}
+.search-bar{
+    height: 6vh;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 90%;
+    padding: 0 0 0 4%;
+}
+.search-bar-input{
+    border: none;
+    font-size: 1.1rem;
+}
+.search-bar-input:focus{
+    outline: none; 
+    border: none;  
+}
+.search-bar-btn{
+    height: 100%;
+    width: 50px;
+    text-align: center;
+    border-left: 1px solid #ccc;
+    border-radius: 0 20px 20px 0;
+}
+.search-icon{
+    font-size: 1.2rem;
+}
+.search-bar-btn:hover{
+    background-color: #e0e0e0;
+}
+.microphone-btn{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+.microphone-icon{
+    font-size: 1.5rem;
+}
+/*************************NavBarRight*************************/
+.nav-right{ 
+    height: 100%;
+    width: 30vw;
+    justify-content: flex-end;
+}
+.upload-btn,.notifications-btn{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+.upload-icon, .notifications-icon{
+    font-size: 1.5rem;
+}
+.profile-btn{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+.profile-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #00b9a1;
+}
+/*************************Responsive*************************/
+@media (max-width: 768px) {
+    .nav-left{
+        width: 20vw;
+    }
+    .nav-middle{
+        width: 60vw;
+    }
+    .nav-right{
+        width: 20vw;
+    }
+    .side-menu-btn{
+        display: none;
+    }
+    .search-bar-btn{
+        display: none;
+    }
+    .upload-btn{
+        display: none;
+    }
+    .notifications-btn{
+        display: none;
+    }
+}

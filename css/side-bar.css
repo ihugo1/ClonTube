@@ -1,0 +1,27 @@
+/**********Responsive**********/
+.side-bar{
+    flex-direction: column;
+    width: 10vw;
+    height: 90vh;
+    border-right: 1px solid #ccc;
+    justify-content: flex-start;
+    position: fixed;
+    padding: 2% 0;
+}
+.side-bar-link{
+    flex-direction: column;
+    color: black;
+    margin: 15px 0;
+}
+@media (max-width: 768px) {
+    .side-bar{
+        flex-direction: row;
+        width: 100vw;
+        height: 15vh;
+        border-top: 1px solid #ccc;
+        justify-content: space-around;
+        position: fixed;
+        padding: 2% 0;
+        bottom: 0;
+    }
+}
