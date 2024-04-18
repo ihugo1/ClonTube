@@ -1,13 +1,17 @@
 /*************************NavBar*************************/
 .nav{
     height: 10vh;
+    width: 100vw;
+    z-index: 100;
+    background-color: white;
     border-bottom: 1px solid #ccc;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
 }
 /*************************NavBarLeft*************************/
 .nav-left{
     width: 30vw;
     justify-content: flex-start;
-    height: 100%;
 }
 .icon-youtube{
     font-size: 40px;
@@ -28,7 +32,6 @@
 .nav-middle{
     width: 40vw;
     justify-content: center;
-    height: 100%;
 }
 .search-bar{
     height: 6vh;
@@ -40,6 +43,7 @@
 .search-bar-input{
     border: none;
     font-size: 1.1rem;
+    width: 100%;
 }
 .search-bar-input:focus{
     outline: none; 
@@ -68,7 +72,6 @@
 }
 /*************************NavBarRight*************************/
 .nav-right{ 
-    height: 100%;
     width: 30vw;
     justify-content: flex-end;
 }
@@ -93,6 +96,9 @@
 }
 /*************************Responsive*************************/
 @media (max-width: 768px) {
+    .nav{
+        width: 100vw;
+    }
     .nav-left{
         width: 20vw;
     }
@@ -109,6 +115,9 @@
         display: none;
     }
     .upload-btn{
+        display: none;
+    }
+    .microphone-btn{
         display: none;
     }
     .notifications-btn{

@@ -1,8 +1,8 @@
 .video-card{
-    height: 240px;
-    width: 310px;
+    height: 250px;
+    width: 300px;
     flex-direction: column;
-    margin: 10px;
+    background-color: rgb(255, 255, 255);
 }
 .video-thumbnail{
     height: 70%;

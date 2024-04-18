@@ -3,15 +3,10 @@ let btnClose = document.querySelector(".side-menu-btn-close");
 let sideMenu = document.querySelector(".side-menu");
 let overlay = document.querySelector(".overlay");
 
-btnOpen.addEventListener("click",
-    function(){
-        sideMenu.classList.toggle("side-menu-ACTIVE");
-        overlay.classList.toggle("activeOverlay");
-    }
-);
-btnClose.addEventListener("click",
-    function(){
-        sideMenu.classList.toggle("side-menu-ACTIVE");
-        overlay.classList.toggle("activeOverlay");
-    }
-);
+function toggleClasses(){
+    sideMenu.classList.toggle("side-menu-ACTIVE");
+    overlay.classList.toggle("activeOverlay");
+}
+
+btnOpen.addEventListener("click", toggleClasses);
+btnClose.addEventListener("click", toggleClasses);

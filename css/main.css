@@ -1,12 +1,110 @@
-.home{
-    margin-left: 10vw;
-    height: 90vh;
+/************MainContainer************/
+.main-container{
+    height: auto;
+    width: 100vw;
+    z-index: 50;
+    margin-top: 10vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+}
+/**********Banner****************/
+.banner{
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    background-image: url(/img/banner/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10%;
+}
+.banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 0;
+}
+.banner-text{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    margin: 10px 0;
+    z-index: 2;
+}
+.banner-btn{
+    background-color: rgb(184, 0, 0);
+    padding: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: 2;
+}
+.banner-btn:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+/**********SideBar*******************/
+.side-bar{
+    width: 10vw;
+    height: 100%;
+    z-index: 100;
+    flex-direction: column;
+    border-right: 1px solid #ccc;
+    justify-content: flex-start;
+    position: fixed;
+    padding: 2% 0;
+    background-color: rgb(255, 255, 255);
+}
+.side-bar-link{
+    flex-direction: column;
+    color: rgb(99, 99, 99);
+    margin: 15px 0;
+}
+/************HomeContent************/
+.home-content{
     width: 90vw;
+    height: 90vh;
+    margin-left: 10vw;
+    z-index: 100;
+    position: fixed;
+    overflow-y: auto;
+    background-color: rgb(255, 255, 255);
+}
+.videos-grid {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 18px;
+    justify-content: center;
 }
 /*************Resposive****************/
 @media (max-width: 768px) {
-    .home{
+    .main-container{
+    }
+    .banner{
+        display: none;
+    }
+    .home-content{
         margin-left: 0;
+        width: 100%;
+        height: 75vh;
+    }
+    .side-bar{
+        flex-direction: row;
+        justify-content: space-around;
+        border: 0;
         width: 100vw;
-    } 
+        height: 15vh;
+        bottom: 0;
+        z-index: 200;
+    }
 }
