@@ -30,7 +30,7 @@
     z-index: 2;
 }
 .banner-btn{
-    background-color: rgba(255, 0, 0, 0.637);
+    background-color: rgb(184, 0, 0);
     padding: 10px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -39,4 +39,9 @@
 }
 .banner-btn:hover{
     background-color: rgb(255, 0, 0);
+}
+@media (max-width: 768px) {
+    .banner{
+        display: none;
+    }
 }

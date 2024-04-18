@@ -1,0 +1,45 @@
+.video-card{
+    height: 240px;
+    width: 310px;
+    flex-direction: column;
+    margin: 10px;
+}
+.video-thumbnail{
+    height: 70%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.video-info{
+    height: 30%;
+    width: 100%;
+    margin-top: 10px;
+}
+.video-details{
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.video-info-channel-image{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+.video-info-channel-image img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+.video-card-title{
+    font-size: 18px;
+    overflow: hidden;
+}
+.video-info-channel-name, .video-info-views{
+    font-size: 16px;
+    color: #7e7e7e;
+}
