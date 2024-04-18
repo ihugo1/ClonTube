@@ -3,18 +3,77 @@
     top: 0;
     height: 100vh;
     width: 20vw;
-    padding: 2% 2%;
-    background-color: white;
     border-right: 1px solid #ccc;
+    background-color: white;
     left: -20vw;
     transition: left 0.3s ease;
     z-index: 2;
+    padding: 0 1%;
+    overflow-y: scroll;
 }
 .side-menu-header{
     justify-content: flex-start;
+    height: 10vh;
+}
+.side-menu-btn-close{
+    width: 40px;
+    height: 40px;
+    color: black;
+    text-align: center;
+    margin: 0 20px;
 }
 .side-menu.side-menu-ACTIVE{
     left: 0;
+}
+.hr{
+    margin: 20px 0;
+    color: #ccc;
+}
+
+/********************SideMenuShortCuts**************/
+.side-menu-shortcuts{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.side-menu-shortcut{
+    margin: 10px 0;
+    color: black;
+}
+.side-menu-shortcut:first-child{
+    margin: 10px 0;
+    color: rgb(255, 0, 0);
+}
+.side-menu-shortcut i{
+    font-size: 25px;
+    margin-right: 20px;
+    text-align: center;
+}
+.side-menu-shortcut span{
+    font-size: 18px;
+}
+/************************Suscriptions******************/
+.side-menu-suscription-list{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.suscribed-channel-shortcut{
+    margin: 10px 0;
+    color: black;
+}
+.suscribed-channel-shortcut i {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 30px; /* Tamaño del círculo: ajusta según necesites */
+    height: 30px; /* Tamaño del círculo: ajusta según necesites */
+    background-color: #f00; /* Color de fondo del círculo */
+    border-radius: 50%; /* Hace que el fondo sea un círculo */
+    color: white; 
+    font-size: 20px; 
+    margin-right: 20px;
+}
+.suscribed-channel-shortcut span{
+    font-size: 14px;
 }
 /*************************Responsive*************************/
 @media (max-width: 768px) {
