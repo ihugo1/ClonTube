@@ -1,0 +1,152 @@
+/*************VideoPlayer**************/
+.video-player-container{
+    height: 90vh;
+    width: 100vw;
+    position: fixed;
+    overflow-y: auto;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+.video-player{
+    width: 70vw;
+    height: auto;
+}
+.video-player__video{
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+/*************VideoPlayerData**************/
+.video-player__video-title{
+    margin: 15px 0;
+    font-size: 30px;
+    font-weight: light;
+}
+.video-player__video-btns{
+    margin: 15px 0;
+    width: 100%;
+    justify-content: space-between;
+}
+.video-player__user-channel{
+    
+}
+.video-player__user-channel img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.video-player__suscribe-btn, .video-player__share-btn{
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    height: 35px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-player__suscribe-btn{
+    background-color: red;
+    color: white;
+    border: red;
+}
+.video-player__likes-box{
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.like-btn, .dislike-btn{    
+    font-size: 18px;
+}
+.like-btn:hover, .dislike-btn:hover{
+    color: blue;
+}
+/*************Description**************/
+.video-player__video-description{
+    margin: 15px 0;
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.description__date{
+    font-weight: bold;
+    margin: 5px 0;
+}
+.description__content{
+    font-weight: light;
+    margin: 5px 0;
+}
+/*************CommentInput**************/
+.comment-section{
+    margin: 15px 0;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.comment-section__comments-ammount{
+    font-size: 20px;
+}
+.user-comment-input-box{
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+.user-comment-input-box img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.user-comment-input{
+    width: 100%;
+    height: 50px;
+    border-style: none;
+    border-bottom: 1px solid #ccc;
+}
+.user-comment-input:focus{
+    outline: none; 
+}
+/******Comment*****/
+.comments-container{
+    padding: 10px 0;
+}
+.comment{
+    display: flex;
+    margin: 20px 0;
+}
+.comment img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.comment-author{
+    display: flex;
+    margin-bottom: 10px;
+}
+.comment-author-name{
+    font-weight: bold;
+    margin-right: 10px;
+}
+.comment-date{
+    font-weight: lighter;
+}
+.comment-text{
+    margin-bottom: 10px;
+}
+.comment-bts{
+
+}
+/*************Si1deVideosList**************/
+.side-videos-list{
+    width: 25vw;
+    background-color: black;
+}

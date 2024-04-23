@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <!--FontAwesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="overlay">
+
+        <!--NavBar-->
+        <nav class="nav flex-div">
+        <!--NavLeft-->
+        <div class="nav-left flex-div">
+            <button class="side-menu-btn-open">
+                <i class="fa-solid fa-bars icon-menu"></i>
+            </button>
+            <i class="fa-brands fa-youtube icon-youtube"></i>
+        </div>
+        <!--NavMiddle-->
+        <div class="nav-middle flex-div">
+            <!--SearchBar-->
+            <div class="search-bar flex-div">
+                <input class="search-bar-input" type="text" placeholder="Buscar">
+                <button class="search-bar-btn">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </button>
+            </div>
+            <!--Microphone-->
+            <button class="microphone-btn">
+                <i class="fa-solid fa-microphone microphone-icon"></i>
+            </button>
+        </div>
+        <!--NavRight-->
+        <div class="nav-right flex-div">
+            <button class="upload-btn">
+                <i class="fa-solid fa-upload upload-icon"></i>
+            </button>
+            <button class="notifications-btn">
+                <i class="fa-solid fa-bell notifications-icon"></i>
+            </button>
+            <button class="profile-btn">
+                <img src="/img/user/user.jpg" class="profile-img">
+            </button>
+        </div>
+        </nav>
+        
+        <!--VideoPlayerPage-->
+        <div class="video-player-container">
+            <!--VideoPlayer-->
+            <div class="video-player">
+                <video controls class="video-player__video">
+                    <source src="/video/video.mp4" type="video/mp4">
+                </video>
+                <div class="video-player__video-data">
+                    <h1 class="video-player__video-title">Título del video</h1>
+                    <div class="video-player__video-btns flex-div">
+                        <div class="video-player__user-channel flex-div">
+                            <img src="/img/user/user.jpg">
+                            <span>Hugo Cea</span>
+                        </div>
+                        <button class="video-player__suscribe-btn">Suscribe</button>
+                        <div class="video-player__likes-box  flex-div">
+                            <button class="like-btn">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </button>
+                            <button class="dislike-btn">
+                                <i class="fa-solid fa-thumbs-down"></i>
+                            </button>
+                        </div>
+                        <button class="video-player__share-btn">
+                            <i class="fa-solid fa-share"></i>Share
+                        </button>
+                    </div>
+                </div>
+                <div class="video-player__video-description">
+                    <span class="description__date">Published on 19/Sep/2022</span>
+                    <span class="description__content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum illo sunt cum 
+                        quam suscipit earum optio dolore iste facere sint aperiam perspiciatis enim debitis 
+                        ratione architecto consequatur reiciendis, exercitationem nihil! Lorem ipsum dolor 
+                        sit amet consectetur adipisicing elit. Laborum illo sunt cum quam suscipit earum 
+                        optio dolore iste facere sint aperiam perspiciatis enim debitis ratione architecto 
+                        onsequatur reiciendis, exercitationem nihil!Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Laborum illo sunt cum quam suscipit earum optio dolore iste facere 
+                        sint aperiam perspiciatis enim debitis ratione architecto consequatur reiciendis, 
+                        exercitationem nihil!Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Laborum illo sunt cum quam suscipit earum optio dolore iste facere sint aperiam 
+                        perspiciatis enim debitis ratione architecto consequatur reiciendis, exercitationem 
+                        nihil!
+                    </span>
+                </div>
+                <div class="comment-section">
+                    <span class="comment-section__comments-ammount">234 Comments</span>
+                    <div class="user-comment-input-box flex-div">
+                        <img src="/img/user/user.jpg">
+                        <input class="user-comment-input" placeholder="Add a comment">
+                    </div>
+                    <div class="comments-container">
+                        <div class="comment">
+                            <img src="/img/user/user.jpg">
+                            <div class="comment-content">
+                                <div class="comment-author">
+                                    <p class="comment-author-name">Hugo Cea</p>
+                                    <p class="comment-date">2 days ago</p>
+                                </div>
+                                <p class="comment-text">Nice video</p>
+                                <div class="comment-btns">
+                                    <button class="like-btn">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </button>
+                                    <button class="dislike-btn">
+                                        <i class="fa-solid fa-thumbs-down"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="comment">
+                            <img src="/img/user/user.jpg">
+                            <div class="comment-content">
+                                <div class="comment-author">
+                                    <p class="comment-author-name">Hugo Cea</p>
+                                    <p class="comment-date">2 days ago</p>
+                                </div>
+                                <p class="comment-text">Epic Video!</span>
+                                <div class="comment-btns">
+                                    <button class="like-btn">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </button>
+                                    <button class="dislike-btn">
+                                        <i class="fa-solid fa-thumbs-down"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--SideVideos-->
+            <div class="side-videos-list">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--SideMenu-->
+    <div class="side-menu">
+        <!--SideMenuHeader-->
+        <div class="side-menu-header flex-div">
+            <button class="side-menu-btn-close">
+                <i class="fa-solid fa-bars icon-menu"></i>
+            </button>
+            <i class="fa-brands fa-youtube icon-youtube"></i>
+        </div>
+        <hr class="hr">
+        <!--SideMenuShortcuts-->
+        <div class="side-menu-shortcuts flex-div">
+            <a class="side-menu-shortcut flex-div" href="#">
+                <i class="fa-solid fa-house"></i>
+                <span>Principal</span>
+            </a>
+            <a class="side-menu-shortcut flex-div" href="#">
+                <i class="fa-solid fa-camera"></i>
+                <span>Shorts</span>
+            </a>
+            <a class="side-menu-shortcut flex-div" href="#">
+                <i class="fa-solid fa-video"></i>
+                <span>Suscripciones</span>
+            </a>
+            <a class="side-menu-shortcut flex-div" href="#">
+                <i class="fa-solid fa-user"></i>
+                <span>Tu canal</span>
+            </a>
+            <a class="side-menu-shortcut flex-div" href="#">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <span>Videos gustados</span>
+            </a>
+        </div>
+        <hr class="hr">
+        <!--Suscriptions-->
+        <div class="side-menu-suscription-list flex-div">
+            <a class="suscribed-channel-shortcut flex-div" href="#">
+                <i class="fa-solid fa-user"></i>
+                <span>Suscripción 1</span>
+            </a>
+            <a class="suscribed-channel-shortcut flex-div" href="#">
+                <i class="fa-solid fa-user"></i>
+                <span>Suscripción 2</span>
+            </a>
+            <a class="suscribed-channel-shortcut flex-div" href="#">
+                <i class="fa-solid fa-user"></i>
+                <span>Suscripción 3</span>
+            </a>            
+            <a class="suscribed-channel-shortcut flex-div" href="#">
+                <i class="fa-solid fa-user"></i>
+                <span>Suscripción 4</span>
+            </a>
+            <a class="suscribed-channel-shortcut flex-div" href="#">
+                <i class="fa-solid fa-user"></i>
+                <span>Suscripción 5</span>
+            </a>
+            <a class="suscribed-channel-shortcut flex-div" href="#">
+                <i class="fa-solid fa-user"></i>
+                <span>Suscripción 6</span>
+            </a>
+            <a class="suscribed-channel-shortcut flex-div" href="#">
+                <i class="fa-solid fa-user"></i>
+                <span>Suscripción 7</span>
+            </a>
+            <a class="suscribed-channel-shortcut flex-div" href="#">
+                <i class="fa-solid fa-user"></i>
+                <span>Suscripción 8</span>
+            </a>
+    
+        </div>
+    </div>
+
+    <script src="/js/side-menu.js"></script>
+
+</body>
+</html>
