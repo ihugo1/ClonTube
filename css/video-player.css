@@ -7,7 +7,7 @@
     margin-top: 10vh;
     display: flex;
     justify-content: space-around;
-    padding: 5px;
+    padding: 10px 5px;
 }
 .video-player{
     width: 70vw;
@@ -83,6 +83,20 @@
 .description__content{
     font-weight: light;
     margin: 5px 0;
+    display: none;
+    flex-direction: column;
+}
+.description__open-btn:hover{
+    text-decoration: underline;
+}
+.description__close-btn:hover{
+    text-decoration: underline;
+}
+.display-block{
+    display: block;
+}
+.display-none{
+    display: none;
 }
 /*************CommentInput**************/
 .comment-section{

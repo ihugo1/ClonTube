@@ -54,6 +54,7 @@
         <div class="video-player-container">
             <!--VideoPlayer-->
             <div class="video-player">
+                <!--Player-->
                 <video controls class="video-player__video">
                     <source src="/video/video.mp4" type="video/mp4">
                 </video>
@@ -78,8 +79,10 @@
                         </button>
                     </div>
                 </div>
+                <!--Description-->
                 <div class="video-player__video-description">
                     <span class="description__date">Published on 19/Sep/2022</span>
+                    <button class="description__open-btn">Ver Más</button>
                     <span class="description__content">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum illo sunt cum 
                         quam suscipit earum optio dolore iste facere sint aperiam perspiciatis enim debitis 
@@ -93,8 +96,10 @@
                         Laborum illo sunt cum quam suscipit earum optio dolore iste facere sint aperiam 
                         perspiciatis enim debitis ratione architecto consequatur reiciendis, exercitationem 
                         nihil!
+                        <button class="description__close-btn">Ver menos</button>
                     </span>
                 </div>
+                <!--Comments-->
                 <div class="comment-section">
                     <span class="comment-section__comments-ammount">234 Comments</span>
                     <div class="user-comment-input-box flex-div">
@@ -120,7 +125,7 @@
                                 </div>
                             </div>
                         </div>
-                                                <div class="comment">
+                        <div class="comment">
                             <img src="/img/user/user.jpg">
                             <div class="comment-content">
                                 <div class="comment-author">
@@ -222,7 +227,9 @@
         </div>
     </div>
 
+    <script src="/js/description.js"></script>
     <script src="/js/side-menu.js"></script>
+
 
 </body>
 </html>
